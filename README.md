@@ -36,14 +36,9 @@ Run the example:
 ```bash
 $  docker exec -it d1aa9e4b44f3 php qc-secrets.php
 {
-  "<<opco>>": {
-  "qualys_username": "<<qualys prod username for given opco>>",
-  "qualys_password": "<<qualys prod password for given opco>>",
-  "qualys_host": "<<qualys prod host for given opco>>"
-  },
-  "splunk_username": "<<gsirt splunk service account username>>",
-  "splunk_password": "<<gsirt splunk service account password>>",
-  "splunk_host": "<<gsirt spluk host>>"
+    "splunk_username": "<< splunk service account username>>",
+    "splunk_password": "<< splunk service account password>>",
+    "splunk_host": "<< spluk host>>"
 }
 
 ```
@@ -58,13 +53,8 @@ docker-compose.yml  Dockerfile  README.md  src
 ```bash
 $ docker exec -it d1aa9e4b44f3 php qc-secrets.php
 {
-  "<<opco>>": {
-  "qualys_username": "<<qualys prod username for given opco>>",
-  "qualys_password": "<<qualys prod password for given opco>>",
-  "qualys_host": "<<qualys prod host for given opco>>"
-  },
-  "splunk_username": "<<gsirt splunk service account username>>",
-  "splunk_password": "<<gsirt splunk service account password>>",
-  "splunk_host": "<<gsirt spluk host>>"
+    "splunk_username": "<< splunk service account username>>",
+    "splunk_password": "<< splunk service account password>>",
+    "splunk_host": "<< spluk host>>"
 }
 ```
