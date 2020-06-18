@@ -40,8 +40,19 @@ $  docker exec -it d1aa9e4b44f3 php qc-secrets.php
     "splunk_password": "<< splunk service account password>>",
     "splunk_host": "<< spluk host>>"
 }
-
 ```
+# Use the docker exec command to execute commands in the container and return the result to the command prompt using docker exec <container-id> command.
+```bash
+$ docker exec -it d1aa9e4b44f3 /bin/bash
+root@d1aa9e4b44f3:/var/www/html#
+root@d1aa9e4b44f3:/var/www/html# php qc-secrets.php
+{
+    "splunk_username": "<< splunk service account username>>",
+    "splunk_password": "<< splunk service account password>>",
+    "splunk_host": "<< spluk host>>"
+}
+```
+
 # To check whether the `qc_password` secrets are referencing the secret.json file or not
 ```bash
 $ rm secret.json
