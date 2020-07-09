@@ -32,7 +32,7 @@ d1aa9e4b44f3        php:7.2-apache                      "docker-php-entrypoi…"
 ```
 
 Run the example:
-# This example prints the secret contents `qc_password`
+ This example prints the secret contents `qc_password`
 ```bash
 $  docker exec -it d1aa9e4b44f3 php qc-secrets.php
 {
@@ -41,7 +41,7 @@ $  docker exec -it d1aa9e4b44f3 php qc-secrets.php
     "splunk_host": "<< spluk host>>"
 }
 ```
-# Use the docker exec command to execute commands in the container and return the result to the command prompt using docker exec <container-id> command.
+ Use the docker exec command to execute commands in the container and return the result to the command prompt using docker exec <container-id> command.
 ```bash
 $ docker exec -it d1aa9e4b44f3 /bin/bash
 root@d1aa9e4b44f3:/var/www/html#
@@ -53,14 +53,14 @@ root@d1aa9e4b44f3:/var/www/html# php qc-secrets.php
 }
 ```
 
-# To check whether the `qc_password` secrets are referencing the secret.json file or not
+ To check whether the `qc_password` secrets are referencing the secret.json file or not
 ```bash
 $ rm secret.json
 
 $ ls
 docker-compose.yml  Dockerfile  README.md  src
 ```
-# Again executed the script, it works
+ Again executed the script, it works
 ```bash
 $ docker exec -it d1aa9e4b44f3 php qc-secrets.php
 {
